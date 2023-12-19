@@ -16,3 +16,13 @@
    + Collected data by SQL and created metrics from data lake
    + Data pre-processing, Standardlize data, Removed outlier using IQR EDA
    + Evaluated model
+
+# Project 3: SEO DASHBOARD
+- Goal: Provide an overview in SEO performance in traffic and conversion tracking
+- Description: Using Looker Studio to connect  with Google Analytic, Google Search Console, Data Lake to build a dashboard to detect changes and track performance
+- Team size: 1
+- Responsibilities:
+   + Comunicated with SEO team to get all the requirements
+   + Collected data from multiple sources
+   + Visualized data on Looker Studio
+   + Maintained if there’s any change in data source
