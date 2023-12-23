@@ -9,7 +9,7 @@
    + Setup report and monitored weekly
 
 # Project 2: SALARY PREDICTION MODEL
-- Goal: Provide to Employer using job platform a tool to predict salary range while hiring.
+- Goal: Provide to Employer who using job platform a tool to predict salary range while hiring.
 - Description: Using Gradient Boosting model and job platform’s data and  to predict the suitable salary range for a role.
 - Team size: 1
 - Responsibilities:
