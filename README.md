@@ -1,5 +1,5 @@
 # Project 1: JOB SUPPLY & DEMAND DASHBOARD
-- Goal: Determine the gap between supply candidate and demand job.  Find out how much users and jobs we need more to drive marketing effort.
+- Goal: Determine the gap between supply candidate and demand job.  Find out how many additional users and jobs we need to drive marketing effort.
 - Description: Tracking weekly job and user metrics, calculate new metrics to give actionables for the team
 - Team size: 1
 - Responsibilities: 
