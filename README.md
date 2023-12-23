@@ -14,7 +14,7 @@
 - Team size: 1
 - Responsibilities:
    + Collected data by SQL and created metrics from data lake
-   + Data pre-processing, Standardlize data, Removed outlier using IQR EDA
+   + Data pre-processing, Standardized data, Removed outlier using IQR EDA
    + Evaluated model
 
 # Project 3: SEO DASHBOARD
