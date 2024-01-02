@@ -1,0 +1,30 @@
+
+
+Project: Search Accuracy Report
+
+Overview:
+As the lead analyst for the Search Accuracy Report project, I orchestrated a comprehensive analysis to enhance the efficiency and precision of our job marketplace platform's search functionality. The primary goal was to elevate search accuracy metrics, including precision, recall, and F1 Score, ultimately achieving a 10% increase in overall accuracy.
+
+Key Responsibilities and Contributions:
+
+Metric Definition:
+
+Defined a set of relevant metrics crucial for measuring search accuracy, including Relevance Score, Click-Through Rate (CTR), Conversion Rate, Search Query Success Rate, Bounce Rate, Time to Apply, User Feedback, Error Rate, Long-Tail Searches, and Fail Case.
+Carefully selected metrics that aligned closely with our goals and collaborated with data engineers to acquire any missing data required for analysis.
+Data Gathering:
+
+Worked closely with the data engineering team to collect and process necessary data from the job marketplace platform, ensuring a comprehensive dataset for analysis.
+Benchmark Analysis:
+
+Conducted a benchmark analysis against industry standards, utilizing appropriate statistical methods and tools.
+Examined historical data, conducted user surveys and feedback analyses, and benchmarked against competitors and data from different markets (e.g., ID).
+Applied a meticulous approach to identify areas of improvement based on benchmark analysis results.
+Improvement Plan Development:
+
+Formulated a detailed plan to implement changes aimed at enhancing search accuracy, considering insights derived from the benchmark analysis.
+Collaborated with relevant teams to seamlessly integrate proposed improvements into the search algorithm.
+Monitoring and Impact Assessment:
+
+Established a robust monitoring system to track search accuracy Key Performance Indicators (KPIs) on a monthly basis over the following year.
+Successfully achieved a 10% increase in overall search accuracy by consistently monitoring the impact of implemented changes.
+This project not only improved the precision of our search algorithm but also demonstrated the efficacy of a data-driven approach in optimizing platform performance.
