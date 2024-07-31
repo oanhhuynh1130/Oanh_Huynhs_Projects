@@ -1,12 +1,15 @@
-# Project 1: JOB SUPPLY & DEMAND DASHBOARD
-- Goal: Determine the gap between supply candidate and demand job.  Find out how many additional users and jobs we need to drive marketing effort.
-- Description: Tracking weekly job and user metrics, calculate new metrics to give actionables for the team
+# Project 1: DUPLICATED JOB DETECTION 
+- Goal: Decrease duplicated jobs rate on the job platform to improve user experience.
+- Description: Detects jobs with duplication signs on the platform and collaborates with Platform Operator to remove those jobs.
 - Team size: 1
 - Responsibilities: 
-   + Conducted user research for user satisfaction.
-   + Collected data by SQL and created metrics from data lake
-   + Brainstormed ideas for threshold and calculation fomular with CTO
-   + Setup report and monitored weekly
+   + Developed the tool to check duplicated jobs using Python
+   + Regularly reviewed and enhanced the tool with 3 versions
+   + Conducted manual reviews and monitored with the Operations team
+   + Worked with Operation lead to validate and remove the duplicated/ scam jobs from the platform
+   + Suggested product changes to prevent the duplicated/ scam jobs in the long term
+- Result: Reduced the ratio of % Duplicated Jobs/Open Jobs from 42% to 16.5% in 4 months.
+
 
 # Project 2: SEARCH ACCURACY REPORT
 - Goal: Conduct Search accuracy benchmark analysis to understand the current user search experience and give suggestion to improve the Search accuracy rate
@@ -19,27 +22,6 @@
    + Setup report and monitored weekly
 - Result: The report was tracked weekly by the Product team and executed A/B testing. Total conversion from search 0.7% to 6.1%.
 
-# Project 3: SEO DASHBOARD
-- Goal: Provide an overview in SEO performance in traffic and conversion tracking
-- Description: Using Looker Studio to connect  with Google Analytic, Google Search Console, Data Lake to build a dashboard to detect changes and track performance
-- Team size: 1
-- Responsibilities:
-   + Comunicated with SEO team to get all the requirements
-   + Collected data from multiple sources
-   + Visualized data on Looker Studio
-   + Maintained if there’s any change in data source
- 
-# Project 4: CONTENT CATEGORIZE AND CEILING ANALYSIS FOR BLOG
-- Goal: Identify high performance of Blog categories and analyze the traffic ceiling for each category to guide content production effort in multiple countries
-- Description: Working with Data Engineer to build a Content categorize tool with Python and Google API and analyze 7000 blog contents performance using metrics on Google Search Console, Google Analytic
-- Team size: 2
-- Responsibilities: 
-   + Communicated with Data Engineer for data categorize request
-   + Collected data from multiple sources: Google Analytic, Google Search Console, Screaming frog, Ahrefs
-   + Analyzed high performance categories
-   + Research for ceiling search volume to estimate the growth potential of each category in term of traffic and content quantity
-   + Give suggestions on which categories we should focus on
-- Result: The suggestions had been used in OKRs of the Content Marketing team.
 
 # Project 5: SALARY PREDICTION MODEL
 - Goal: Provide to Employer who using job platform a tool to predict salary range while hiring.
