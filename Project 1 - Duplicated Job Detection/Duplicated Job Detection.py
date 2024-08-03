@@ -8,11 +8,6 @@ Original file is located at
 
 # 1 . Import lib
 """
-
-from notebook.services.config import ConfigManager
-c = ConfigManager()
-c.update('notebook', {"CodeCell": {"cm_config": {"lineWrapping": True}}})
-
 #Export to Google Sheets / Part 1 Auth
 from google.colab import auth
 auth.authenticate_user()
@@ -32,9 +27,9 @@ import numpy as np
 
 """# 2 . Start Cursor"""
 
-conn = psycopg2.connect(host="data-warehouse-repl.delta.data-science.glintsintern.com",
-                        port = "30376", database="data_lake", user="jesslyn@glints.com",
-                        password="su8ashdj24#jmn3")
+conn = psycopg2.connect(host="",
+                        port = "", database="", user="",
+                        password="")
 
 cur = conn.cursor()
 
@@ -239,17 +234,17 @@ company_ids_from_sales_team_referral AS (
         CASE
             WHEN pic.email IS NULL THEN
                 CASE
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-093%' THEN 'nam.vu@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-094%' THEN 'dang.nguyen@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-096%' THEN 'toan.nguyen@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-115%' THEN 'van.phan@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-123%' THEN 'anh.nguyenle@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-397%' THEN 'hung.dao@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-394%' THEN 'minh.nguyenquang@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-398%' THEN 'thao.tranthixuan@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-399%' THEN 'diem.nguyen@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-400%' THEN 'huong.dam@glints.com'
-                    WHEN c.acquisition_referral_code LIKE '%GLVN-402%' THEN 'thuy.pham@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-093%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-094%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-096%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-115%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-123%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-397%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-394%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-398%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-399%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-400%' THEN '@glints.com'
+                    WHEN c.acquisition_referral_code LIKE '%GLVN-402%' THEN '@glints.com'
                     ELSE 'Others'
                 END
             WHEN pic.email IS NOT NULL THEN pic.email
@@ -263,20 +258,20 @@ company_ids_from_sales_team_referral AS (
     WHERE
         (c.acquisition_referral_code LIKE 'GLVN%'
         OR c.employer_service_rep_id IN (
-          '97bf4bc4-9ddc-4d89-b99f-e17212cd927d', -- Old - vy.nguyenhoanglan@glints.com
-          '59615828-297c-4c47-a3eb-80dacfadc5c3', -- Old - anh.nguyenthuy@glints.com
-          'e98481aa-2dd4-428e-aa08-030a004d262a', -- Old - dang.nguyen@glints.com
-          '97d21ad3-55f5-430e-a85a-f1c813f752a8', -- Old - van.phan@glints.com
-          '660ebc20-2c1b-45ad-9d31-dc87ae473816', -- Old - nam.vu@glints.com
-          'b3981bbd-0875-4518-a6e8-2d101050285d', -- Old - thuyen.nguyen@glints.com
-          '0fab2727-b28e-40ed-898b-5fa4f5a08954', -- Old -  khang.vang@glints.com
-          '13dc3512-0760-48e2-85f3-529388f998f5', -- Old -  dang.nguyen@glints.vn
-          'ee9ba917-0f04-4bdc-b066-75bf1cb9115a', -- minh.nguyenquang@glints.com
-          '36b6cdec-b2f5-4d26-81d2-3eae315cc004', -- thao.tranthixuan@glints.com
-          '84f3acc8-b2b7-4061-99e4-4a4f3f28ade8', -- hung.dao@glints.com
-          '4c347584-87a7-47b0-a0a5-21d2cb190608', -- Hương
-          '6384dbea-7243-451a-ae5b-e5a2a86e0f42', -- Diem
-          'a26d4498-95b2-4c10-9c15-2ffdc7001e93' -- thuy
+          '97bf4bc4-9ddc-4d89-b99f', -- Old - @glints.com
+          '59615828-297c-4c47-a3eb', -- Old - @glints.com
+          'e98481aa-2dd4-428e-aa08', -- Old - @glints.com
+          '97d21ad3-55f5-430e-a85a', -- Old - @glints.com
+          '660ebc20-2c1b-45ad-9d31', -- Old - @glints.com
+          'b3981bbd-0875-4518-a6e8', -- Old - @glints.com
+          '0fab2727-b28e-40ed-898b', -- Old - @glints.com
+          '13dc3512-0760-48e2-85f3', -- Old - @glints.vn
+          'ee9ba917-0f04-4bdc-b066', -- @glints.com
+          '36b6cdec-b2f5-4d26-81d2', -- @glints.com
+          '84f3acc8-b2b7-4061-99e4', -- @glints.com
+          '4c347584-87a7-47b0-a0a5', -- @glints.com
+          '6384dbea-7243-451a-ae5b', -- @glints.com
+          'a26d4498-95b2-4c10-9c15' -- @glints.com
         ))
         AND c.status = 'VERIFIED'
         AND c.country_code = 'VN'
@@ -502,7 +497,6 @@ SELECT *
 FROM final
 WHERE
     type IS NOT NULL
-    AND pic_email NOT IN ('dang.nguyen@glints.com','van.phan@glints.com','nam.vu@glints.com','toan.nguyen@glints.com','tung.nguyen@glints.com')
 ORDER BY week_start_date DESC, pic_email, company_name
 
 """)
